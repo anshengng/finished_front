@@ -36,6 +36,8 @@ const clickFull = () => {
         document.exitFullscreen()
     }
 }
+console.log(userInfo);
+
 </script>
 
 

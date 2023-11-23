@@ -12,11 +12,17 @@ export interface loginRef {
     name: string
     password: string
     captcha: {
-        key:string
-        value:string
+        key: string
+        value: string
     }
 }
 export async function userinfo() {
+    return {
+        data: {
+            username: 'jizhu',
+            avator: '2'
+        }
+    };
     return http.request<User>({
         url: `/user/current`
     })
@@ -37,7 +43,7 @@ export async function getCaptcha() {
     })
 }
 
-export async function register(data:any) {
+export async function register(data: any) {
     return http.request({
         url: `/auth/register`,
         method: 'post',
