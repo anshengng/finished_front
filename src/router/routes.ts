@@ -16,11 +16,6 @@ export const routes = [
         name: 'register',
         component: () => import("@/views/auth/register.vue"),
     },
-    {
-        path: "/article",
-        name: 'article',
-        component: () => import("@/views/article.vue"),
-    },
     //404页面 输入无效路由时
     {
         path: "/:any(.*)",
