@@ -5,7 +5,7 @@ export default {
     path: '/admin',
     redirect: '/admin/home',
     component: () => import('@/layouts/admin.vue'),
-    meta: { menu: { title: 'DashBoard', icon: 'fas fa-house-user', active: true, }, auth: true },
+    meta: { menu: { title: 'DashBoard', icon: 'fas fa-house-user', active: true, }},
     children: [
         {
             name: 'admin/home',

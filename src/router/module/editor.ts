@@ -4,7 +4,8 @@ export default {
     name: 'editor',
     redirect: '/editor/base',
     component: () => import('@/layouts/admin.vue'),
-    meta: { menu: { title: '编辑器', icon: 'fab fa-etsy' }, auth: true },
+    // meta: { menu: { title: '编辑器', icon: 'fab fa-etsy' }, auth: true },
+    meta: { menu: { title: '编辑器', icon: 'fab fa-etsy' }},
     children: [
         {
             path: 'base',

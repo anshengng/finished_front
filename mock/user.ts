@@ -12,13 +12,13 @@ export default [
                     name: '机烛Officail',
                     age: 22,
                     avator: '/public/images/home.jpg',
-                    permissions: ['editor_markdown','editor_base','article_edit']
+                    permissions: ['editor_markdown', 'editor_base', 'article_edit']
                 }
             }
         }
     },
     {
-        url: '/api/login',
+        url: '/auth/login',
         method: 'post',
         response: () => {
             return {
@@ -30,4 +30,12 @@ export default [
             }
         }
     },
+    {
+        url: '/api/captcha',
+        method: 'get',
+        response: () => {
+            return { svg: 'svg' };
+        }
+    },
+    
 ] as MockMethod[]

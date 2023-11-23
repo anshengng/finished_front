@@ -4,8 +4,8 @@ import v from '@/plugins/validate'
 import { userLogin } from '@/utils/user';
 import ErrorStore from '@/store/userError'
 
-let captcha_key = ref('')
-let captcha_value = ref('')
+// let captcha_key = ref('')
+// let captcha_value = ref('')
 
 const { handleSubmit, errors } = v.useForm({
     initialValues: {
@@ -22,13 +22,13 @@ const { value: name } = v.useField<string>('name', { label: '用户名' })
 const { value: password } = v.useField<string>('password', { label: '密码' })
 
 const onSubmit = handleSubmit(async (values: any) => {
-    if(captcha_value.value === ''){
-        ElMessage({
-            type: 'error',
-            message: '验证码不能为空'
-        })
-    }
-    values.captcha = { key: captcha_key.value, value: +captcha_value.value } as Record<string, string | number>
+    // if(captcha_value.value === ''){
+    //     ElMessage({
+    //         type: 'error',
+    //         message: '验证码不能为空'
+    //     })
+    // }
+    // values.captcha = { key: captcha_key.value, value: +captcha_value.value } as Record<string, string | number>
     userLogin(values as loginRef)
 })
 
@@ -51,7 +51,7 @@ const onSubmit = handleSubmit(async (values: any) => {
                         <p class="lk-error">{{ errors.password }}</p>
                         <p class="lk-error" v-show="!errors.password && ErrorStore().errors.filed === 'password'">{{
                             ErrorStore().errors.message }}</p>
-                        <Captcha v-model:captcha_key="captcha_key" v-model:captcha_value="captcha_value"></Captcha>
+                        <!-- <Captcha v-model:captcha_key="captcha_key" v-model:captcha_value="captcha_value"></Captcha> -->
                         <lkButton>登录</LkButton>
                     </div>
                     <div class="flex justify-center mt-3 text-2xl text-white">
