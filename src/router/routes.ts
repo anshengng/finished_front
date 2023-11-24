@@ -4,7 +4,7 @@ export const routes = [
     {
         path: "/",
         name: 'home',
-        component: () => import("@/views/Home.vue"),
+        component: () => import("@/layouts/home/home.vue"),
     },
     {
         path: "/login",

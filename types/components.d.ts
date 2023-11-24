@@ -22,6 +22,7 @@ declare module 'vue' {
     Notification: typeof import('./../src/components/Notification.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    TopBar: typeof import('./../src/components/topBar.vue')['default']
     WangEditor: typeof import('./../src/components/editor/wangEditor.vue')['default']
   }
 }
