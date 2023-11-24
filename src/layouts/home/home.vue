@@ -4,7 +4,10 @@
 
 
 <template>
-    Home
+    <button>wdwddw</button>
+    <div class="w-full h-24 bg-cyan-400">
+        <TopBar></TopBar>
+    </div>
 </template>
 
 

@@ -4,7 +4,9 @@
 
 
 <template>
-    <router-view></router-view>
+    <div class="w-full h-24 bg-slate-300">
+
+    </div>
 </template>
 
 
