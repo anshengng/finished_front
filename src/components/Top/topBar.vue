@@ -4,9 +4,7 @@
 
 
 <template>
-    <div class="w-full h-24 bg-slate-300">
-
-    </div>
+    232323
 </template>
 
 

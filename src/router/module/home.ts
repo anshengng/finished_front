@@ -2,7 +2,7 @@ import { RouteRecordRaw } from 'vue-router';
 
 export default {
     name: 'home',
-    path: '/home',
+    path: '/',
     component: () => import('@/layouts/home/home.vue'),
     meta: { menu: { title: '404页面', icon: 'fab fa-audible' } },
     children: [

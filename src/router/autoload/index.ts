@@ -11,6 +11,8 @@ let routes: RouteRecordRaw[] = utils.env.VITE_AUTOLOAD ? layoutRoutes : autoload
 function autoload(router: Router) {
     // const userInfo = userStore().userInfo
     routes = routes.map(route => {
+        console.log(route);
+        
         //有设置perssion的路由进行过滤（!r.meta?.permission）
         // route.children = route.children?.filter(r => !r.meta?.permission || userInfo.permissions?.includes(r.meta?.permission as string));
 
