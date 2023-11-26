@@ -4,10 +4,10 @@
 
 
 <template>
-    <div class="w-full h-24 bg-zinc-400">
+    <div class="w-full h-20 flex justify-center">
         <TopBar></TopBar>
-        <router-view></router-view>
     </div>
+    <router-view></router-view>
 </template>
 
 

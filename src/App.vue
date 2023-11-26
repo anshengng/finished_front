@@ -8,10 +8,13 @@ import { Suspense } from 'vue';
 </script>
 
 <template>
-  <!-- 等待加载完成在渲染 -->
-  <Suspense>
-    <router-view></router-view>
-  </Suspense>
+  <!-- 添加灰背景 -->
+  <div class="w-screen h-screen bg-slate-100"> 
+    <!-- 等待加载完成在渲染 -->
+    <Suspense>
+      <router-view></router-view>
+    </Suspense>
+  </div>
 </template>
 
 <style scoped></style>
