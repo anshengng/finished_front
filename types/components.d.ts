@@ -24,6 +24,7 @@ declare module 'vue' {
     ElTabs: typeof import('element-plus/es')['ElTabs']
     ElTag: typeof import('element-plus/es')['ElTag']
     Error: typeof import('./../src/layouts/error.vue')['default']
+    FooterBar: typeof import('./../src/components/Footer/footerBar.vue')['default']
     Home: typeof import('./../src/layouts/home/home.vue')['default']
     LkButton: typeof import('./../src/components/From/lk-button.vue')['default']
     LkInput: typeof import('./../src/components/From/lk-input.vue')['default']
