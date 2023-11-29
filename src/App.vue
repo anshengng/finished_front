@@ -14,6 +14,9 @@ import { Suspense } from 'vue';
     <Suspense>
       <router-view></router-view>
     </Suspense>
+    <div class="w-full flex justify-center">
+      <FooterBar></FooterBar>
+    </div>
   </div>
 </template>
 
