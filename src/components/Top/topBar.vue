@@ -15,6 +15,9 @@
                 <li>group 4</li>
             </ul>
         </div>
+        <div>
+            <UserComp></UserComp>
+        </div>
     </div>
 </template>
 

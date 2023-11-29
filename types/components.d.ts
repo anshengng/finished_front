@@ -38,6 +38,7 @@ declare module 'vue' {
     RouterView: typeof import('vue-router')['RouterView']
     TestGuard: typeof import('./../src/views/auth/testGuard.vue')['default']
     TopBar: typeof import('./../src/components/Top/topBar.vue')['default']
+    UserComp: typeof import('./../src/components/Top/userComp.vue')['default']
     Validate: typeof import('./../src/views/auth/validate.vue')['default']
     WangEditor: typeof import('./../src/components/editor/wangEditor.vue')['default']
   }
