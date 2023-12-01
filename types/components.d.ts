@@ -36,6 +36,7 @@ declare module 'vue' {
     Register: typeof import('./../src/views/auth/register.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SideBar: typeof import('./../src/components/Side/sideBar.vue')['default']
     TestGuard: typeof import('./../src/views/auth/testGuard.vue')['default']
     TopBar: typeof import('./../src/components/Top/topBar.vue')['default']
     UserComp: typeof import('./../src/components/Top/userComp.vue')['default']

@@ -4,9 +4,9 @@
   box-sizing: border-box;
 }
 
-/* html {  
+html {  
   font-size: 100vw / 7.5;
-} */
+}
 
 li {
   list-style: none;
