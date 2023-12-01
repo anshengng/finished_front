@@ -9,7 +9,7 @@
     </div>
     <main class="w-[63%] min-h-[1000px] bg-pink-300">
         <div>
-
+            <div class="category"></div>
         </div>
     </main>
 </template>
