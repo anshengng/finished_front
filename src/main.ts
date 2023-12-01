@@ -12,9 +12,16 @@ async function bootstrap() {
 
     setupPlugins(app) // 自动更新 需要注意这俩的顺序，如果有使用pinia
     setupRouter(app) // 注册路由
-    
+
     await router.isReady() //路由准备好在挂载
     app.mount('#app')
 }
+// function setRem() {
+//     const rem = window.innerWidth / 750;
+//     document.documentElement.style.fontSize = `${rem}px`;
+// }
+
+// // 初始化
+// setRem();
 
 bootstrap()
