@@ -11,7 +11,7 @@
         <div>
             <div class="category"></div>
         </div>
-        <div class="absolute right-[-5%]">
+        <div class="absolute right-[-5rem]">
             <SideBar></SideBar>
         </div>
     </main>
