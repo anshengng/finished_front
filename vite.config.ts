@@ -10,10 +10,10 @@ import { visualizer } from 'rollup-plugin-visualizer'
 //   }
 // })
 
-
 //command: 'build' | 'serve';
 //mode:string ’development'、'production'等，表示当前的环境
 export default ({ command, mode }: ConfigEnv) => {
+
   const isBuild = command === 'build'
   const root = process.cwd()
   const env = parseEnv(loadEnv(mode, root))// 获取配置文件
@@ -39,6 +39,7 @@ export default ({ command, mode }: ConfigEnv) => {
     },
     //开发环境设置
     server: {
+      port: 8080,
       proxy: {
         '/api': {
           //将/api访问转换为target
