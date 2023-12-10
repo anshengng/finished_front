@@ -9,7 +9,7 @@
     </div>
     <main class="relative w-[63%] min-h-[1000px] bg-pink-300">
         <div>
-            <div class="category"></div>
+            <div class="category">22</div>
         </div>
         <div class="absolute right-[-5rem]">
             <SideBar></SideBar>
