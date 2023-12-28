@@ -8,14 +8,15 @@
         <img src="/public/images/swiper1.jpeg" alt="" srcset="" class="w-full h-full object-contain">
     </div>
     <main class="relative w-[63%] min-h-[1000px] bg-pink-300">
-        <div>
-            <div class="category"></div>
-        </div>
-        <div class="absolute right-[-5rem]">
-            <SideBar></SideBar>
-        </div>
+            <div>
+                <div class="category"></div>
+            </div>
+            <div class="fixed right-[1rem] top-[20rem]">
+                <SideBar></SideBar>
+            </div>
     </main>
 </template>
 
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+</style>
