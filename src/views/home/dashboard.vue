@@ -11,7 +11,7 @@
             <div>
                 <div class="category"></div>
             </div>
-            <div class="fixed right-[1rem] top-[20rem]">
+            <div class="fixed right-[1rem] bottom-[20px]">
                 <SideBar></SideBar>
             </div>
     </main>
