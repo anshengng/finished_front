@@ -5,7 +5,7 @@
 
 <template>
     <div class="sideBar">
-        <div class="w-[5rem] h-[28rem] bg-red-400">
+        <div class="w-[5rem] h-[25rem] bg-red-400">
 
         </div>
     </div>
