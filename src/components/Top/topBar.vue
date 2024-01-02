@@ -1,7 +1,9 @@
 <script setup lang="ts">
+import { getCategory } from '@/apis/category';
+
+const res = await getCategory()
 
 </script>
-
 
 <template>
     <!-- width 63% -->
@@ -9,13 +11,10 @@
         <div >icon</div>
         <div class="w-full">
             <ul class="flex gap-20 justify-center">
-                <li>group 1</li>
-                <li>group 2</li>
-                <li>group 3</li>
-                <li>group 4</li>
+                <li v-for="item in res.data" :key="item.id" class="cursor-pointer">{{ item.title }}</li>
             </ul>
         </div>
-        <div>
+        <div class="mr-4">
             <UserComp></UserComp>
         </div>
     </div>
