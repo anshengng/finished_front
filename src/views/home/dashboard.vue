@@ -18,7 +18,7 @@ const modules = [Keyboard, Scrollbar, Navigation, Pagination]
 
 <template>
     <div class="swiper w-screen h-[550px] bg-cyan-400">
-        <swiper :slidesPerView="1" :centeredSlides="false" :slidesPerGroupSkip="1" :grabCursor="true" :keyboard="{
+        <swiper :slidesPerView="2" :centeredSlides="false" :slidesPerGroupSkip="1" :grabCursor="true" :keyboard="{
             enabled: true,
         }" :breakpoints="{
     '769': {
@@ -28,7 +28,9 @@ const modules = [Keyboard, Scrollbar, Navigation, Pagination]
 }" :scrollbar="true" :navigation="true" :pagination="{
     clickable: true,
 }" :modules="modules" class="mySwiper ">
-            <swiper-slide><img src="https://cdn.magloft.com/github/swiper/images/page-001.jpg" /></swiper-slide>
+            <swiper-slide class="object-contain"><img src="https://cdn.magloft.com/github/swiper/images/page-001.jpg" /></swiper-slide>
+            <swiper-slide class="object-contain"><img src="https://cdn.magloft.com/github/swiper/images/page-001.jpg" /></swiper-slide>
+            <swiper-slide><img src="/images/swiper1.jpg" /></swiper-slide>
         </swiper>
     </div>
     <main class="relative w-[63%] min-h-[1500px] bg-pink-300">
