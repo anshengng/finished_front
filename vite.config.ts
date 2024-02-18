@@ -39,7 +39,7 @@ export default ({ command, mode }: ConfigEnv) => {
     },
     //开发环境设置
     server: {
-      port: 8080,
+      port: 3000,
       proxy: {
         '/api': {
           //将/api访问转换为target
