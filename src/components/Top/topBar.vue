@@ -8,10 +8,13 @@ const res = await getCategory()
 <template>
     <!-- width 63% -->
     <div class="w-[63%] h-full bg-white flex items-center">
-        <div >icon</div>
-        <div class="w-full">
-            <ul class="flex gap-20 justify-center">
-                <li v-for="item in res.data" :key="item.id" class="cursor-pointer">{{ item.title }}</li>
+        <div class="w-full flex items-center gap-24">
+            <!-- logo -->
+            <img src="/images/icon.png" alt="" @click="$router.push('/')" class="cursor-pointer">
+
+            <ul class="flex gap-16 justify-center text-lg">
+                <li v-for="item in res.data" :key="item.id" class="cursor-pointer hover:text-orange-500">{{ item.title }}
+                </li>
             </ul>
         </div>
         <div class="mr-4">

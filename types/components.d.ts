@@ -15,6 +15,7 @@ declare module 'vue' {
     Auth: typeof import('./../src/layouts/auth.vue')['default']
     BreadCrumbs: typeof import('./../src/components/BreadCrumbs.vue')['default']
     Captcha: typeof import('./../src/components/Captcha.vue')['default']
+    CategoryBar: typeof import('./../src/components/categoryBar.vue')['default']
     Dashboard: typeof import('./../src/views/home/dashboard.vue')['default']
     Editor: typeof import('./../src/layouts/editor.vue')['default']
     ElBreadcrumb: typeof import('element-plus/es')['ElBreadcrumb']

@@ -57,7 +57,7 @@ const onSubmit = handleSubmit(async (values: any) => {
 
                         <!-- 确认密码 -->
                         <lkInput class="mt-5" placeholder="请再次输入密码" type="password" v-model="password_confirmed" />
-                        <Captcha v-model:captcha_key="captcha_key" v-model:captcha_value="captcha_value"></Captcha>
+                        <!-- <Captcha v-model:captcha_key="captcha_key" v-model:captcha_value="captcha_value"></Captcha> -->
                         <lkButton>注册</LkButton>
                     </div>
                 </div>

@@ -9,7 +9,7 @@ import { Suspense } from 'vue';
 
 <template>
   <!-- 添加灰背景 -->
-  <div class="w-screen h-screen bg-slate-100 overflow-x-hidden"> 
+  <div class=" w-[2544px] bg-slate-100"> 
     <!-- 等待加载完成在渲染 -->
     <Suspense>
       <router-view></router-view>
