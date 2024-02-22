@@ -17,6 +17,13 @@ window.addEventListener('scroll', () => {
         showSideBar.value = false
     }
 })
+
+onUnmounted(() => {
+    window.removeEventListener('scroll', () => {
+        showSideBar.value = false
+    })
+})
+
 </script>
 
 
@@ -30,10 +37,13 @@ window.addEventListener('scroll', () => {
             <swiper-slide><img class="swiper-item" src="https://swiperjs.com/demos/images/nature-2.jpg" /></swiper-slide>
         </swiper>
     </div>
-    <main class="relative w-[63%] min-h-[1500px] bg-pink-300">
+    <main class="relative w-[63%] min-h-[1500px]">
         <div>
             <div class="category">
                 <CategoryBar></CategoryBar>
+            </div>
+            <div class="box">
+                <HomeBox></HomeBox>
             </div>
         </div>
         <div class="fixed right-[1px] bottom-[20px]">

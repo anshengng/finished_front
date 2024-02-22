@@ -2,7 +2,7 @@ import { getCaptcha } from "@/apis/user"
 import {ref} from "vue";
 
 
-export function useCaptcha() {
+export async function useCaptcha() {
     let captcha = ref<Record<string,any>>({})
 
     const get_captcha = async () => {

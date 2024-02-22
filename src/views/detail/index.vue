@@ -4,7 +4,9 @@
 
 
 <template>
-    caategoryBar
+    <div>
+        {{ $route.query.id }}
+    </div>
 </template>
 
 

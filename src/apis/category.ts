@@ -3,6 +3,7 @@ export interface ICategory {
     id: number
     title: string
     content: string
+    img: string
 }
 
 export async function getCategory() {

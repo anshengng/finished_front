@@ -12,37 +12,44 @@ export default [
                     {
                         id: 1,
                         title: '手机',
-                        content: ''
+                        content: '',
+                        img: '/public/images/category/phone.png'
                     },
                     {
                         id: 2,
                         title: '电脑',
-                        content: ''
+                        content: '',
+                        img: '/public/images/category/phone.png'
                     },
                     {
                         id: 3,
-                        title: '电视',
-                        content: ''
+                        title: '平板',
+                        content: '',
+                        img: '/public/images/category/phone.png'
                     },
                     {
                         id: 4,
                         title: '手表',
-                        content: ''
+                        content: '',
+                        img: '/public/images/category/phone.png'
                     },
                     {
                         id: 5,
-                        title: '平板',
-                        content: ''
+                        title: '电视',
+                        content: '',
+                        img: '/public/images/category/phone.png'
                     },
                     {
                         id: 6,
-                        title: '无人机',
-                        content: ''
+                        title: '耳机',
+                        content: '',
+                        img: '/public/images/category/phone.png'
                     },
                     {
                         id: 7,
-                        title: '服务中心',
-                        content: ''
+                        title: '音响',
+                        content: '',
+                        img: '/public/images/category/phone.png'
                     }
                 ]
             }

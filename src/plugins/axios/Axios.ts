@@ -69,7 +69,7 @@ export default class Axios {
             try {
                 const response = await this.instance.request<D>(config)
                 // resolve(response)
-                resolve(response.data)
+                resolve(response.data) 
             } catch (error) {
                 reject(error)
             }

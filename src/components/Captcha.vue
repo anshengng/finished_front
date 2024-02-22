@@ -4,15 +4,15 @@ import { useCaptcha } from '@/composable/captcha/useCaptcha'
 
 const text = ref('')
 
-const emits = defineEmits(['update:captcha_key','update:captcha_value'])
+const emits = defineEmits(['update:captcha_key', 'update:captcha_value'])
 
-const { get_captcha, captcha } = useCaptcha()
+const { get_captcha, captcha } = await useCaptcha()
 
 await get_captcha()
 
-watch(text,()=>{
-    emits('update:captcha_value',text.value)
-    emits('update:captcha_key',captcha.value.key) // 验证码key
+watch(text, () => {
+    emits('update:captcha_value', text.value)
+    emits('update:captcha_key', captcha.value.key) // 验证码key
 })
 
 </script>
