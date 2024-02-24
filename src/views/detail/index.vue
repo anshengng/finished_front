@@ -4,7 +4,7 @@
 
 
 <template>
-    <div>
+    <div class="w-[63%]">
         {{ $route.query.id }}
     </div>
 </template>

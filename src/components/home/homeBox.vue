@@ -3,27 +3,27 @@ import { useGoodList } from '@/composable/goods/useGoods';
 import router from '@/router';
 
 
-const {categoryList,getCategoryList, goodList, getGoodList } = await useGoodList()
+const { categoryList, getCategoryList, goodList, getGoodList } = await useGoodList()
 
 await getGoodList()
 await getCategoryList()
 
-const goodDetail = (id:number)=>{
+const goodDetail = (id: number) => {
     router.push({
         path: '/detail',
         query: {
             id: id
         }
     })
-    
+
 }
 </script>
 
 
 <template>
-    <div class="w-full h-[960px] bg-slate-100 my-3 flex flex-col" v-for="item in categoryList.slice(0,3)" :key="item.id">
-        <div class="banner w-full object-cover my-2">
-            <img src="/public/images/homeBox/phone-banner.png" alt="" class="w-full">
+    <img src="/public/images/homeBox/phone-banner.png" alt="" class="w-full mt-4">
+    <div class="w-full bg-slate-100 my-3 flex flex-col" v-for="item in categoryList.slice(0, 3)" :key="item.id">
+        <div class="banner w-full">
             <div class="box-head my-3 font-light text-2xl flex justify-between items-center">
                 <p>{{ item.title }}</p>
                 <div class="font-light text-lg cursor-pointer">
