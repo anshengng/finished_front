@@ -9,7 +9,7 @@
             <ul class="w-full flex flex-col items-center">
                 <li class="w-full flex flex-col items-center text-sm font-normal ">
                     <i class="fab fa-centercode text-slate-400 text-4xl my-1"></i>
-                    个人中心  
+                    个人中心
                 </li>
                 <li></li>
                 <li></li>
